@@ -29,7 +29,7 @@
                     <img src="https://i.ibb.co/w07K2Vn/youtube1.png" alt="fb" class="img-fluid" height="50" width="50"/>
                 </a>
             </div>-->
-    <nav class="navbar navbar-expand-lg bg-danger">
+    <nav class="navbar navbar-expand-sm bg-danger">
 <div class="container-fluid">
     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler1" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,11 +48,12 @@
 </div>
     </nav>
         </header>
-        <div class="container">
-        <div class="row"><!--div row-->
+        <div class="container-fluid">
+        <div class="container-fluid row"><!--div row-->
             
-                <div class="col-4 mt-3 p-4 me-0 h-50 border border-1 border-dark"><!--div col 4-->
-                    <div class="d-flex justify-content-between align-items-center"><h2>Filter</h2><span><em class="fa fa-filter" aria-hidden="true"></em></span></div>
+                <div class="col-4 mt-3 p-4 me-0 h-50 "><!--div col 4-->
+                   <div class="container-fluid mx-4 border px-4 shadow rounded-3">
+                    <div class="d-flex justify-content-between align-items-center mt-2"><h2>Filter</h2><span><em class="fa fa-filter" aria-hidden="true"></em></span></div>
                     <div class="location mt-2 mb-2">
                         <h5 >Select Location</h5>
                         <select name="Location" id="Location" class="me-3 w-75 text-center ms-2">
@@ -62,10 +63,10 @@
                             <option value="Bangalore"> Bangalore </option>
                         </select>
                     </div>
-                    <div class="boxes mt-2 mb-2">
+                    <div class="mt-4 mb-3">
                         <h5>Ratings</h5>
                         <div class="label">
-                            <label class="d-block" for="5"><input class="me-2" type="checkbox" name="5" id="5"/><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em></label>
+                            <label class="d-block" for="5"><input class="me-2" type="checkbox" name="5" id="5"/><em class="fa fa-star checked"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em></label>
                             <label class="d-block" for="4"><input class="me-2" type="checkbox" name="4" id="4"/><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em></label>
                             <label class="d-block" for="3"><input class="me-2" type="checkbox" name="3" id="3"/><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em></label>
                             <label class="d-block" for="2"><input class="me-2" type="checkbox" name="2" id="2"/><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em></label>
@@ -73,7 +74,7 @@
                         </div>
                         
                     </div>
-                    <div class="boxes mt-2 mb-2">
+                    <div class="mt-2 mb-3">
                         <h5>Cuisines</h5>
                         <div class="label">
                             <label class="d-block" for="Indian"><input class="me-2" type="checkbox" name="Indian" id="Indian"><span>Indian</span></label>
@@ -83,23 +84,23 @@
                         </div>
                         
                     </div>
-                    <div class="boxes sort row">
+                    <div class="boxes sort row mt-2">
                         <h5>Sort by</h5>
-                        <div class="sorts row">
-                            <select name="Preferences" id="Preferences" class="me-3 w-75 text-center ms-2>
+                        <div class="sorts row ">
+                            <select name="Preferences" id="Preferences" class="col me-3 w-50 text-center ms-3 text-muted">
                                 <option value="">Preferences</option>
                                 <option value="Vegetarian">Vegetarian</option>
                                 <option value="Non-Vegetarian">Non-Vegetarian</option>
                             </select>
-                            <select name="Prices" id="Prices" value="Prices" class="me-3 w-75 text-center ms-2>
+                            <select name="Prices" id="Prices" value="Prices"  class="col me-3 w-50 text-center ms-2 text-muted">
                                 <option value="">Prices</option>
                                 <option value="low_to_high">Low to High</option>
                                 <option value="high_to_low">High to Low</option>
                             </select>
                         </div>
-                        <div class="boxes radio row">
-                            <h5 id="Cost">Cost per person</h5>
-                            <div class="label">
+                        <div class="boxes radio row mt-2">
+                            <h5 id="Cost" class="mt-2">Cost per person</h5>
+                            <div class="label mb-3">
                                 <label class="d-block" for="200"><input class="me-2" type="radio" name="radio" id="200"><span> Less than ₹ 200 </span></label>
                                 <label class="d-block" for="500"><input class="me-2" type="radio" name="radio" id="500"><span> ₹ 200 - ₹ 500 </span></label>
                                 <label class="d-block" for="1000"><input class="me-2" type="radio" name="radio" id="1000"><span> ₹ 500 - ₹ 1000 </span></label>
@@ -109,10 +110,11 @@
                         </div>
                     </div>              
                 </div>
-                <div class="col-8 mt-3 ps-5 border border-danger pt-3"><!--div col8-->
-                <div class="search p-3">
+                </div>
+                <div class="col-8 mt-3 ps-5 pt-3"><!--div col8-->
+                <div class="search p-3 w-100">
                     <form action="action_page.com" method="get">
-                        <input class="me-2" type="text" name="Search" id="search" placeholder="Search.."/>
+                        <input class="me-2 w-75" type="text" name="Search" id="search" placeholder="Search.."/>
                         <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </form>
                     <p>Showing results for</p>
@@ -122,7 +124,7 @@
                 </div>
                 
                     <div class="col">
-                        <div class="row p-3">
+                        <div class="row p-3 mt-2 img-thumbnail h-75 w-75 ms-3">
                             <a class="w-100 row d-flex justify-content-lg-start" href="../details/details.html">
                             <div class="col-4">
                                 <img src="./Images/Pizza Palace.jpg" alt="Pizza Palace" class=" rest-img img-fluid img-thumbnail rounded-2 w-100 h-auto">
@@ -131,14 +133,14 @@
                                 <h4>Pizza Palace</h4>
                                  <p>Pizza, Pasta, Italian, Continental</p> 
                                  <p>5th Cross, MG Road</p>
-                                 <p class="/=-5m1yu4uyyyyyyyyyyyyyyyyyyyyyyyyyxduiiiiiiiiiii4">
+                                 <p class="">
                                     4.6 <em class="fa orange fa-star"></em>
                                  </p>  
                                  <p>₹300 for one</p>
                             </div>
                         </a>
                         </div>
-                        <div class="restaurant row">
+                        <div class=" row p-3 img-thumbnail w-75 ms-3">
                             <a class="w-100 row d-flex justify-content-lg-start" href="../details/details.html">
                             <div class="col-4">
                                 <img class="rest-img img-fluid img-thumbnail rounded-2 w-100 h-auto" src="./Images/Buna'sKitchen.jpg" alt="TrevorKitchen">
@@ -154,9 +156,9 @@
                             </div>
                         </a>
                         </div>
-                        <div class="restaurant w-auto h-auto">
+                        <div class="row p-3 mt-2 img-thumbnail h-75">
                             <a class="w-100 row d-flex justify-content-lg-start" href="../details/details.html">
-                            <div class="col-4-tile">
+                            <div class="col-4">
                                 <img src="./Images/MeatGrill.jpg" alt="MeatGrill" class="rest-ig-fluid img-thumbnail rounded-2 w-100 h-auto">
                             </div>
                             <div class="description col-8">
@@ -171,12 +173,12 @@
                         </a>
                         </div>
                         
-                        <div class="restaurant row-cols-2">
+                        <div class="row p-3 mt-2 img-thumbnail h-75">
                             <a class="w-100 row d-flex justify-content-lg-start" href="../details/details.html">
-                            <div class="col-4-tile">
+                            <div class="col-4">
                                 <img src="./Images/CoffeeHouse .jpg" alt="CoffeeHouse" class="rmg img-fluid img-thumbnail rounded-2 w-100 h-auto">
                             </div>
-                            <div class="description">
+                            <div class="col-8">
                                 <h4>Coffee House</h4>
                                  <p>Pasta, Pastry, Indian, Italian, Beverages</p> 
                                  <p>4th Cross, St. Louis Road</p>
@@ -188,12 +190,12 @@
                         </a>
                         </div>
 
-                        <div class="restaurant row-cols-2">
+                        <div class="row p-3 mt-2 img-thumbnail h-75">
                             <a class="w-100 row d-flex justify-content-lg-start" href="../details/details.html">
-                            <div class="col-4-tile">
+                            <div class="col-4">
                                 <img src="./Images/FreshIceCreams.jpg" alt="FreshIceCreams" class="rests-img img-fluid img-thumbnail rounded-2 w-100 h-auto">
                             </div>
-                            <div class="description">
+                            <div class="description col-8">
                                 <h4>Fresh Ice Creams</h4>
                                  <p>Pasta, Pastry, Indian, Italian, Beverages</p> 
                                  <p>4th Cross, St. Louis Road</p>
@@ -204,12 +206,12 @@
                             </div>
                         </a>
                         </div>
-                        <div class="restaurant row-cols-2">
+                        <div class="row p-3 mt-2 img-thumbnail h-75">
                             <a class="w-100 row d-flex justify-content-lg-start" href="../details/details.html">
-                            <div class="col-4-tile">
+                            <div class="col-4">
                                 <img src="./Images/SoundSalad.jpg" alt="SoundSalad" class="restimg-fluid img-thumbnail rounded-2 w-100 h-auto">
                             </div>
-                            <div class="description">
+                            <div class="description col-8">
                                 <h4>Sound Salad</h4>
                                  <p>Chinese, Indian, Italian, Beverages</p> 
                                  <p>1st Cross, Ashoka Colony</p>
