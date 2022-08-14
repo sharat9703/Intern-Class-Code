@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Listing Page</title>
+        <link rel="stylesheet" href="listing.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"/>
+        <script
+      src="https://kit.fontawesome.com/fd15ff6187.js"
+      crossorigin="anonymous"
+    ></script>
+    </head>
+    <body>
+        <header>
+            <div id="brand">
+                My Listing Page
+            </div>
+            <div id="social">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="https://i.ibb.co/dtzG625/facebook.png" alt="fb" class="socialImg"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://i.ibb.co/19H5LvT/insta.png" alt="fb" class="socialImg"/>
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="https://i.ibb.co/w07K2Vn/youtube1.png" alt="fb" class="socialImg"/>
+                </a>
+            </div>
+        </header>
+        <div id="container">
+            
+                <div class="filter">
+                    <div class="fil"><h2>Filter</h2><span><em class="fa fa-filter" aria-hidden="true"></em></span></div>
+                    <div class="location">
+                        <h5 >Select Location</h5>
+                        <select name="Location" id="Location">
+                            <option value=""> Select Location </option>
+                            <option value="Delhi"> Delhi </option>
+                            <option value="Mumbai"> Mumbai </option>
+                            <option value="Bangalore"> Bangalore </option>
+                        </select>
+                    </div>
+                    <div class="boxes">
+                        <h5>Ratings</h5>
+                        <div class="label">
+                            <label for="5"><input type="checkbox" name="5" id="5"/><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em></label>
+                            <label for="4"><input type="checkbox" name="4" id="4"/><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em></label>
+                            <label for="3"><input type="checkbox" name="3" id="3"/><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em></label>
+                            <label for="2"><input type="checkbox" name="2" id="2"/><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em></label>
+                            <label for="1"><input type="checkbox" name="1" id="1"/><em class="fa orange fa-star"></em></label>
+                        </div>
+                        
+                    </div>
+                    <div class="boxes">
+                        <h5>Cuisines</h5>
+                        <div class="label">
+                            <label for="Indian"><input type="checkbox" name="Indian" id="Indian"><span>Indian</span></label>
+                            <label for="Chinese"><input type="checkbox" name="Chinese" id="Chinese"><span>Chinese</span></label>
+                            <label for="Fast-Food"><input type="checkbox" name="Fast-Food" id="Fast-Food"><span>Fast-Food</span></label>
+                            <label for="Mexican"><input type="checkbox" name="Mexican" id="Mexican"><span>Mexican</span></label>
+                        </div>
+                        
+                    </div>
+                    <div class="boxes sort">
+                        <h5>Sort by</h5>
+                        <div class="sorts">
+                            <select name="Preferences" id="Preferences">
+                                <option value="">Preferences</option>
+                                <option value="Vegetarian">Vegetarian</option>
+                                <option value="Non-Vegetarian">Non-Vegetarian</option>
+                            </select>
+                            <select name="Prices" id="Prices" value="Prices">
+                                <option value="">Prices</option>
+                                <option value="low_to_high">Low to High</option>
+                                <option value="high_to_low">High to Low</option>
+                            </select>
+                        </div>
+                        <div class="boxes radio">
+                            <h5 id="Cost">Cost per person</h5>
+                            <div class="label">
+                                <label for="200"><input type="radio" name="radio" id="200"><span> Less than ₹ 200 </span></label>
+                                <label for="500"><input type="radio" name="radio" id="500"><span> ₹ 200 - ₹ 500 </span></label>
+                                <label for="1000"><input type="radio" name="radio" id="1000"><span> ₹ 500 - ₹ 1000 </span></label>
+                                <label for="more_than_1000"><input type="radio" name="radio" id="more_than_1000"><span> More than ₹ 1000 </span></label>
+                            </div>
+                            
+                        </div>
+                    </div>              
+                </div>
+                <div class="content noBorder">
+                <div class="search">
+                    <form action="action_page.com" method="get">
+                        <input type="text" name="Search" id="search" placeholder="Search.."/>
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                    <p>Showing results for</p>
+                    <p>
+                        6 results found
+                    </p>
+                </div>
+                
+                    
+                        <div class="restaurant">
+                            <a href="../details/details.html">
+                            <div class="img-tile">
+                                <img src="./Images/Pizza Palace.jpg" alt="Pizza Palace" class="rest-img">
+                            </div>
+                            <div class="description">
+                                <h4>Pizza Palace</h4>
+                                 <p>Pizza, Pasta, Italian, Continental</p> 
+                                 <p>5th Cross, MG Road</p>
+                                 <p>
+                                    4.6 <em class="fa orange fa-star"></em>
+                                 </p>  
+                                 <p>₹300 for one</p>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="restaurant">
+                            <a href="../details/details.html">
+                            <div class="img-tile">
+                                <img class="rest-img" src="./Images/Buna'sKitchen.jpg" alt="TrevorKitchen">
+                            </div>
+                            <div class="description">
+                                <h4>Trevor Kitchen</h4>
+                                 <p>Pasta, Chinese, Indian, Italian</p> 
+                                 <p>7th Cross, MG Road</p>
+                                 <p>
+                                    4.6 <em class="fa orange fa-star"></em>
+                                 </p>  
+                                 <p>₹300 for one</p>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="restaurant">
+                            <a href="../details/details.html">
+                            <div class="img-tile">
+                                <img src="./Images/MeatGrill.jpg" alt="MeatGrill" class="rest-img">
+                            </div>
+                            <div class="description">
+                                <h4>Meat Grill</h4>
+                                 <p>Bar, Chinese, Indian, Grill,Beverages</p> 
+                                 <p>7th Lane, Subash Road</p>
+                                 <p>
+                                    4.7 <em class="fa orange fa-star"></em>
+                                 </p>  
+                                 <p>₹500 for one</p>
+                            </div>
+                        </a>
+                        </div>
+                        
+                        <div class="restaurant">
+                            <a href="../details/details.html">
+                            <div class="img-tile">
+                                <img src="./Images/CoffeeHouse .jpg" alt="CoffeeHouse" class="rest-img">
+                            </div>
+                            <div class="description">
+                                <h4>Coffee House</h4>
+                                 <p>Pasta, Pastry, Indian, Italian, Beverages</p> 
+                                 <p>4th Cross, St. Louis Road</p>
+                                 <p>
+                                    4.4 <em class="fa orange fa-star"></em>
+                                 </p>  
+                                 <p>₹100 for one</p>
+                            </div>
+                        </a>
+                        </div>
+
+                        <div class="restaurant">
+                            <a href="../details/details.html">
+                            <div class="img-tile">
+                                <img src="./Images/FreshIceCreams.jpg" alt="FreshIceCreams" class="rest-img">
+                            </div>
+                            <div class="description">
+                                <h4>Fresh Ice Creams</h4>
+                                 <p>Pasta, Pastry, Indian, Italian, Beverages</p> 
+                                 <p>4th Cross, St. Louis Road</p>
+                                 <p>
+                                    4.4 <em class="fa orange fa-star"></em>
+                                 </p>  
+                                 <p>₹100 for one</p>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="restaurant">
+                            <a href="../details/details.html">
+                            <div class="img-tile">
+                                <img src="./Images/SoundSalad.jpg" alt="SoundSalad" class="rest-img">
+                            </div>
+                            <div class="description">
+                                <h4>Sound Salad</h4>
+                                 <p>Chinese, Indian, Italian, Beverages</p> 
+                                 <p>1st Cross, Ashoka Colony</p>
+                                 <p>
+                                    4.8 <em class="fa orange fa-star"></em>
+                                 </p>  
+                                 <p>₹250 for one</p>
+                            </div>
+                          </a>
+                        </div>
+                    </div>
+                
+        </div>
+        
+        <footer class="footer">
+            <hr>
+            <h3>&copy; Sharat's Lab</h3>
+            <div class="fotDiv">
+                <ul>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+            <div class="fotDiv">
+                <ul>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+            <div class="fotDiv noBorder">
+                <ul>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</!DOCTYPE>
