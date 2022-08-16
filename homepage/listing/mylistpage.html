@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Listing Page</title>
-        <!--<link rel="stylesheet" href="listing.css"/>-->
-        <!-- Google fonts-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"/>
-        
- <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<!--- font icon link -->
-<script src="https://kit.fontawesome.com/fd15ff6187.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-         <!--   <div id="brand" class="ms-2">
+  <head>
+    <title>Listing Page</title>
+    <!--<link rel="stylesheet" href="listing.css"/>-->
+    <!-- Google fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <!--- font icon link -->
+    <script
+      src="https://kit.fontawesome.com/fd15ff6187.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .content::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .content {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      .orange{
+        color: orange;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!--   <div id="brand" class="ms-2">
                 My Listing Page
             </div>
             <div id="social" class="me-2">
@@ -29,224 +63,558 @@
                     <img src="https://i.ibb.co/w07K2Vn/youtube1.png" alt="fb" class="img-fluid" height="50" width="50"/>
                 </a>
             </div>-->
-    <nav class="navbar navbar-expand-sm bg-danger">
-<div class="container-fluid">
-    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler1" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collase navbar-collapse " id="navbarToggler1">
-        <div class="container-fluid d-flex justify-content-between align-items-center" style="width: 100%;">
-<a href="#" class="navbar-brand ms-5"><img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="Logo" class="img-fluid" height="150" width="180"></a>
-<ul class="navbar-nav mb-lg-0 mb-2 me-5 d-flex justify-content-end">
-<li class="nav-item me-3"><a href="https://www.facebook.com" target="_blank" class="nav-link active text-decoration-none"><i class="fa fa-2x fa-facebook-official " aria-hidden="true"></i></a></li>
-<li class="nav-item me-3"><a href="https://www.instagram.com" target="_blank" class="nav-link active text-decoration-none"> <i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a></li>
-<li class="nav-item me-3"><a href="https://www.youtube.com" target="_blank" class="nav-link active text-decoration-none"> <i class="fa fa-2x fa-youtube" aria-hidden="true"></i>
-</a></li>
-</ul>
-</div>
-    </div>
-</div>
-    </nav>
-        </header>
+      <nav class="navbar navbar-expand-lg bg-danger">
         <div class="container-fluid">
-        <div class="container-fluid row"><!--div row-->
-            
-                <div class="col-4 mt-3 p-4 me-0 h-50 "><!--div col 4-->
-                   <div class="container-fluid mx-4 border px-4 shadow rounded-3">
-                    <div class="d-flex justify-content-between align-items-center mt-2"><h2>Filter</h2><span><em class="fa fa-filter" aria-hidden="true"></em></span></div>
-                    <div class="location mt-2 mb-2">
-                        <h5 >Select Location</h5>
-                        <select name="Location" id="Location" class="me-3 w-75 text-center ms-2">
-                            <option value=""> Select Location </option>
-                            <option value="Delhi"> Delhi </option>
-                            <option value="Mumbai"> Mumbai </option>
-                            <option value="Bangalore"> Bangalore </option>
-                        </select>
-                    </div>
-                    <div class="mt-4 mb-3">
-                        <h5>Ratings</h5>
-                        <div class="label">
-                            <label class="d-block" for="5"><input class="me-2" type="checkbox" name="5" id="5"/><em class="fa fa-star checked"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em></label>
-                            <label class="d-block" for="4"><input class="me-2" type="checkbox" name="4" id="4"/><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em></label>
-                            <label class="d-block" for="3"><input class="me-2" type="checkbox" name="3" id="3"/><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em></label>
-                            <label class="d-block" for="2"><input class="me-2" type="checkbox" name="2" id="2"/><em class="fa orange fa-star"></em><em class="fa orange fa-star"></em></label>
-                            <label class="d-block" for="1"><input class="me-2" type="checkbox" name="1" id="1"/><em class="fa orange fa-star"></em></label>
-                        </div>
-                        
-                    </div>
-                    <div class="mt-2 mb-3">
-                        <h5>Cuisines</h5>
-                        <div class="label">
-                            <label class="d-block" for="Indian"><input class="me-2" type="checkbox" name="Indian" id="Indian"><span>Indian</span></label>
-                            <label class="d-block" for="Chinese"><input class="me-2" type="checkbox" name="Chinese" id="Chinese"><span>Chinese</span></label>
-                            <label class="d-block" for="Fast-Food"><input class="me-2" type="checkbox" name="Fast-Food" id="Fast-Food"><span>Fast-Food</span></label>
-                            <label class="d-block" for="Mexican"><input class="me-2" type="checkbox" name="Mexican" id="Mexican"><span>Mexican</span></label>
-                        </div>
-                        
-                    </div>
-                    <div class="boxes sort row mt-2">
-                        <h5>Sort by</h5>
-                        <div class="sorts row ">
-                            <select name="Preferences" id="Preferences" class="col me-3 w-50 text-center ms-3 text-muted">
-                                <option value="">Preferences</option>
-                                <option value="Vegetarian">Vegetarian</option>
-                                <option value="Non-Vegetarian">Non-Vegetarian</option>
-                            </select>
-                            <select name="Prices" id="Prices" value="Prices"  class="col me-3 w-50 text-center ms-2 text-muted">
-                                <option value="">Prices</option>
-                                <option value="low_to_high">Low to High</option>
-                                <option value="high_to_low">High to Low</option>
-                            </select>
-                        </div>
-                        <div class="boxes radio row mt-2">
-                            <h5 id="Cost" class="mt-2">Cost per person</h5>
-                            <div class="label mb-3">
-                                <label class="d-block" for="200"><input class="me-2" type="radio" name="radio" id="200"><span> Less than ₹ 200 </span></label>
-                                <label class="d-block" for="500"><input class="me-2" type="radio" name="radio" id="500"><span> ₹ 200 - ₹ 500 </span></label>
-                                <label class="d-block" for="1000"><input class="me-2" type="radio" name="radio" id="1000"><span> ₹ 500 - ₹ 1000 </span></label>
-                                <label class="d-block" for="more_than_1000"><input class="me-2" type="radio" name="radio" id="more_than_1000"><span> More than ₹ 1000 </span></label>
-                            </div>
-                            
-                        </div>
-                    </div>              
-                </div>
-                </div>
-                <div class="col-8 mt-3 ps-5 pt-3"><!--div col8-->
-                <div class="search p-3 w-100">
-                    <form action="action_page.com" method="get">
-                        <input class="me-2 w-75" type="text" name="Search" id="search" placeholder="Search.."/>
-                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    </form>
-                    <p>Showing results for</p>
-                    <p>
-                        6 results found
-                    </p>
-                </div>
-                
-                    <div class="col">
-                        <div class="row p-3 mt-2 img-thumbnail h-75 w-75 ms-3">
-                            <a class="w-100 row d-flex justify-content-lg-start" href="../details/details.html">
-                            <div class="col-4">
-                                <img src="./Images/Pizza Palace.jpg" alt="Pizza Palace" class=" rest-img img-fluid img-thumbnail rounded-2 w-100 h-auto">
-                            </div>
-                            <div class="description col-8">
-                                <h4>Pizza Palace</h4>
-                                 <p>Pizza, Pasta, Italian, Continental</p> 
-                                 <p>5th Cross, MG Road</p>
-                                 <p class="">
-                                    4.6 <em class="fa orange fa-star"></em>
-                                 </p>  
-                                 <p>₹300 for one</p>
-                            </div>
-                        </a>
-                        </div>
-                        <div class=" row p-3 img-thumbnail w-75 ms-3">
-                            <a class="w-100 row d-flex justify-content-lg-start" href="../details/details.html">
-                            <div class="col-4">
-                                <img class="rest-img img-fluid img-thumbnail rounded-2 w-100 h-auto" src="./Images/Buna'sKitchen.jpg" alt="TrevorKitchen">
-                            </div>
-                            <div class="description col-8">
-                                <h4>Trevor Kitchen</h4>
-                                 <p>Pasta, Chinese, Indian, Italian</p> 
-                                 <p>7th Cross, MG Road</p>
-                                 <p>
-                                    4.6 <em class="fa orange fa-star"></em>
-                                 </p>  
-                                 <p>₹300 for one</p>
-                            </div>
-                        </a>
-                        </div>
-                        <div class="row p-3 mt-2 img-thumbnail h-75">
-                            <a class="w-100 row d-flex justify-content-lg-start" href="../details/details.html">
-                            <div class="col-4">
-                                <img src="./Images/MeatGrill.jpg" alt="MeatGrill" class="rest-ig-fluid img-thumbnail rounded-2 w-100 h-auto">
-                            </div>
-                            <div class="description col-8">
-                                <h4>Meat Grill</h4>
-                                 <p>Bar, Chinese, Indian, Grill,Beverages</p> 
-                                 <p>7th Lane, Subash Road</p>
-                                 <p>
-                                    4.7 <em class="fa orange fa-star"></em>
-                                 </p>  
-                                 <p>₹500 for one</p>
-                            </div>
-                        </a>
-                        </div>
-                        
-                        <div class="row p-3 mt-2 img-thumbnail h-75">
-                            <a class="w-100 row d-flex justify-content-lg-start" href="../details/details.html">
-                            <div class="col-4">
-                                <img src="./Images/CoffeeHouse .jpg" alt="CoffeeHouse" class="rmg img-fluid img-thumbnail rounded-2 w-100 h-auto">
-                            </div>
-                            <div class="col-8">
-                                <h4>Coffee House</h4>
-                                 <p>Pasta, Pastry, Indian, Italian, Beverages</p> 
-                                 <p>4th Cross, St. Louis Road</p>
-                                 <p>
-                                    4.4 <em class="fa orange fa-star"></em>
-                                 </p>  
-                                 <p>₹100 for one</p>
-                            </div>
-                        </a>
-                        </div>
-
-                        <div class="row p-3 mt-2 img-thumbnail h-75">
-                            <a class="w-100 row d-flex justify-content-lg-start" href="../details/details.html">
-                            <div class="col-4">
-                                <img src="./Images/FreshIceCreams.jpg" alt="FreshIceCreams" class="rests-img img-fluid img-thumbnail rounded-2 w-100 h-auto">
-                            </div>
-                            <div class="description col-8">
-                                <h4>Fresh Ice Creams</h4>
-                                 <p>Pasta, Pastry, Indian, Italian, Beverages</p> 
-                                 <p>4th Cross, St. Louis Road</p>
-                                 <p>
-                                    4.4 <em class="fa orange fa-star"></em>
-                                 </p>  
-                                 <p>₹100 for one</p>
-                            </div>
-                        </a>
-                        </div>
-                        <div class="row p-3 mt-2 img-thumbnail h-75">
-                            <a class="w-100 row d-flex justify-content-lg-start" href="../details/details.html">
-                            <div class="col-4">
-                                <img src="./Images/SoundSalad.jpg" alt="SoundSalad" class="restimg-fluid img-thumbnail rounded-2 w-100 h-auto">
-                            </div>
-                            <div class="description col-8">
-                                <h4>Sound Salad</h4>
-                                 <p>Chinese, Indian, Italian, Beverages</p> 
-                                 <p>1st Cross, Ashoka Colony</p>
-                                 <p>
-                                    4.8 <em class="fa orange fa-star"></em>
-                                 </p>  
-                                 <p>₹250 for one</p>
-                            </div>
-                          </a>
-                        </div>
-                    </div>
-                </div>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler1"
+            aria-controls="navbarToggler1"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"><img
+                src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png"
+                alt="Logo"
+                class="img-fluid"
+                height="150"
+                width="180"
+            /></span>
+          </button>
+          <div class="collase navbar-collapse" id="navbarToggler1">
+            <div class="container-fluid align-items-center" style="width: 100%">
+              <a href="#" class="navbar-brand ms-lg-5 float-start"
+                ><img
+                  src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png"
+                  alt="Logo"
+                  class="img-fluid"
+                  height="150"
+                  width="180"
+              /></a>
+              <ul class="navbar-nav mb-lg-0 mb-2 me-lg-5 float-end">
+                <li class="nav-item me-lg-3">
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    class="nav-link active text-decoration-none"
+                    ><i
+                      class="fa fa-2x fa-facebook-official"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </li>
+                <li class="nav-item me-lg-3">
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    class="nav-link active text-decoration-none"
+                  >
+                    <i class="fa fa-2x fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="nav-item me-lg-5">
+                  <a
+                    href="https://www.youtube.com"
+                    target="_blank"
+                    class="nav-link active text-decoration-none"
+                  >
+                    <i class="fa fa-2x fa-youtube" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="container-fluid row d-sm-block d-md-block d-lg-flex">
+        <!--div row-->
+
+        <div
+          class="col-lg-4 col-sm-12 col-md-12 mt-3 p-4 me-0 h-50 container-fluid"
+        >
+          <!--div col 4-->
+          <div class="text-center">
+            <button
+              type="button"
+              id="button"
+              class="btn btn-danger text-center w-100 ms-3 d-lg-none d-sm-block"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggler2"
+              aria-expanded="false"
+              aria-controls="navbarToggler2"
+              aria-label="Toggle navigation"
+            >
+              <span class="h2 w-100">Filter <span class="float-end">     <em class="fa fa-filter" aria-hidden="true"></em></span></span>
+            </button>
+          </div>
+          <div class="collapse mt-2 d-lg-block" id="navbarToggler2">
+            <div class="container-fluid mx-4 border px-lg-4 px-sm-5 px-md-5 py-sm-3 py-md-3 py-lg-2 shadow rounded-3">
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <h2>Filter</h2>
+                <span><em class="fa fa-filter" aria-hidden="true"></em></span>
+              </div>
+              <div class="location mt-2 mb-2">
+                <h5 class="text-muted">Select Location</h5>
+                <select
+                  name="Location"
+                  id="Location"
+                  class="me-3 w-75 text-center ms-2"
+                >
+                  <option value="">Select Location</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Bangalore">Bangalore</option>
+                </select>
+              </div>
+              <div class="mt-4 mb-3">
+                <h5>Ratings</h5>
+                <div class="label">
+                  <label class="d-block" for="5"
+                    ><input class="me-2" type="checkbox" name="5" id="5" /><em
+                      class="fa orange fa-star"
+                    ></em
+                    ><em class="fa orange fa-star"></em
+                    ><em class="fa orange fa-star"></em
+                    ><em class="fa orange fa-star"></em
+                    ><em class="fa orange fa-star"></em
+                  ></label>
+                  <label class="d-block" for="4"
+                    ><input class="me-2" type="checkbox" name="4" id="4" /><em
+                      class="fa orange fa-star"
+                    ></em
+                    ><em class="fa orange fa-star"></em
+                    ><em class="fa orange fa-star"></em
+                    ><em class="fa orange fa-star"></em
+                  ></label>
+                  <label class="d-block" for="3"
+                    ><input class="me-2" type="checkbox" name="3" id="3" /><em
+                      class="fa orange fa-star"
+                    ></em
+                    ><em class="fa orange fa-star"></em
+                    ><em class="fa orange fa-star"></em
+                  ></label>
+                  <label class="d-block" for="2"
+                    ><input class="me-2" type="checkbox" name="2" id="2" /><em
+                      class="fa orange fa-star"
+                    ></em
+                    ><em class="fa orange fa-star"></em
+                  ></label>
+                  <label class="d-block" for="1"
+                    ><input class="me-2" type="checkbox" name="1" id="1" /><em
+                      class="fa orange fa-star"
+                    ></em
+                  ></label>
+                </div>
+              </div>
+              <div class="mt-2 mb-3">
+                <h5>Cuisines</h5>
+                <div class="label">
+                  <label class="d-block" for="Indian"
+                    ><input
+                      class="me-2"
+                      type="checkbox"
+                      name="Indian"
+                      id="Indian"
+                    /><span>Indian</span></label
+                  >
+                  <label class="d-block" for="Chinese"
+                    ><input
+                      class="me-2"
+                      type="checkbox"
+                      name="Chinese"
+                      id="Chinese"
+                    /><span>Chinese</span></label
+                  >
+                  <label class="d-block" for="Fast-Food"
+                    ><input
+                      class="me-2"
+                      type="checkbox"
+                      name="Fast-Food"
+                      id="Fast-Food"
+                    /><span>Fast-Food</span></label
+                  >
+                  <label class="d-block" for="Mexican"
+                    ><input
+                      class="me-2"
+                      type="checkbox"
+                      name="Mexican"
+                      id="Mexican"
+                    /><span>Mexican</span></label
+                  >
+                </div>
+              </div>
+              <div class="row mt-2 mb-3">
+                <h5>Sort by</h5>
+                <div class="row">
+                  <select
+                    name="Preferences"
+                    id="Preferences"
+                    class="col me-3 w-50 text-center ms-3 text-muted"
+                  >
+                    <option value="">Preferences</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Non-Vegetarian">Non-Vegetarian</option>
+                  </select>
+                  <select
+                    name="Prices"
+                    id="Prices"
+                    value="Prices"
+                    class="col me-3 w-50 text-center ms-2 text-muted"
+                  >
+                    <option value="">Prices</option>
+                    <option value="low_to_high">Low to High</option>
+                    <option value="high_to_low">High to Low</option>
+                  </select>
+                </div>
+                <div class="row mt-2">
+                  <h5 id="Cost" class="mt-2">Cost per person</h5>
+                  <div class="label mb-3">
+                    <label class="d-block" for="200"
+                      ><input
+                        class="me-2"
+                        type="radio"
+                        name="radio"
+                        id="200"
+                      /><span> Less than ₹ 200 </span></label
+                    >
+                    <label class="d-block" for="500"
+                      ><input
+                        class="me-2"
+                        type="radio"
+                        name="radio"
+                        id="500"
+                      /><span> ₹ 200 - ₹ 500 </span></label
+                    >
+                    <label class="d-block" for="1000"
+                      ><input
+                        class="me-2"
+                        type="radio"
+                        name="radio"
+                        id="1000"
+                      /><span> ₹ 500 - ₹ 1000 </span></label
+                    >
+                    <label class="d-block" for="more_than_1000"
+                      ><input
+                        class="me-2"
+                        type="radio"
+                        name="radio"
+                        id="more_than_1000"
+                      /><span> More than ₹ 1000 </span></label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8 col-sm-12 col-md-12 mt-3 ps-5 pt-3 text-start">
+          <!--div col8-->
+
+          <div class="p-3 w-100 ms-4">
+            <form action="action_page.com" method="get">
+              <input
+                class="me-2 w-75"
+                type="text"
+                name="Search"
+                id="search"
+                placeholder="Search.."
+              />
+              <button type="submit" class="">
+                <i class="bi bi-search" aria-hidden="true"></i>
+              </button>
+            </form>
+            <p>Showing results for</p>
+            <p>6 results found</p>
+          </div>
+          <div
+            class="container mb-3 content ms-lg-4 ms-md-5 ms-sm-5"
+            style="height: 700px; overflow-y: scroll"
+          >
+            <div class="col">
+              <div class="row mt-2 h-75" style="width: 80%">
+                <a
+                  class="w-100 p-3 shadow ms-3 row d-flex justify-content-sm-start text-dark text-decoration-none img-thumbnail"
+                  href="../details/details.html"
+                >
+                  <div
+                    class="col-lg-4 col-sm-12 col-md-12"
+                    style="height: 210px"
+                  >
+                    <img
+                      src="./Images/Pizza Palace.jpg"
+                      alt="Pizza Palace"
+                      class="rounded-2 w-100 h-100"
+                      style="height: 250px"
+                    />
+                  </div>
+
+                  <div class="col-lg-8 col-sm-12 col-md-12">
+                    <div
+                      class="container img-fluid overflow-hidden mt-sm-3 mt-md-3 mt-lg-0"
+                    >
+                      <h4>Pizza Palace</h4>
+                      <p class="badge bg-danger">
+                        4.6 <em class="fa orange fa-star"></em>
+                      </p>
+                      <span class="text-muted"> (2234 reviews)</span>
+                      <p class="text-muted fst-italic">
+                        Pizza, Pasta, Italian, Continental
+                      </p>
+                      <p>5th Cross, MG Road</p>
+
+                      <p>
+                        ₹300 for one
+                        <span class="float-end"
+                          ><img
+                            src="https://us.123rf.com/450wm/outchill/outchill2105/outchill210503592/169696669-food-safety-text-written-on-green-grungy-zig-zag-borders-round-stamp-.jpg?ver=6"
+                            alt="food safety logo"
+                            style="height: 50px; width: 50px"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="row mt-2 h-75" style="width: 80%">
+                <a
+                  class="w-100 p-3 shadow ms-3 img-thumbnail row d-flex justify-content-sm-starts text-decoration-none text-dark"
+                  href="../details/details.html"
+                >
+                  <div
+                    class="col-lg-4 col-sm-12 col-md-12"
+                    style="height: 210px"
+                  >
+                    <img
+                      class="rounded-2 w-100 h-100"
+                      src="./Images/Buna'sKitchen.jpg"
+                      alt="TrevorKitchen"
+                    />
+                  </div>
+
+                  <div class="col-lg-8 col-sm-12 col-md-12">
+                    <div
+                      class="container img-fluid overflow-hidden mt-sm-3 mt-md-3 mt-lg-0"
+                    >
+                      <h4>Trevor Kitchen</h4>
+                      <p class="badge bg-danger">
+                        4.6 <em class="fa orange fa-star"></em>
+                      </p>
+                      <span class="text-muted"> (1398 reviews)</span>
+                      <p class="text-muted fst-italic">
+                        Pasta, Chinese, Indian, Italian
+                      </p>
+                      <p>7th Cross, MG Road</p>
+
+                      <p>
+                        ₹300 for one
+                        <span class="float-end"
+                          ><img
+                            src="https://us.123rf.com/450wm/outchill/outchill2105/outchill210503592/169696669-food-safety-text-written-on-green-grungy-zig-zag-borders-round-stamp-.jpg?ver=6"
+                            alt="food safety logo"
+                            style="height: 50px; width: 50px"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="row mt-2 h-75" style="width: 80%">
+                <a
+                  class="w-100 p-3 shadow ms-3 img-thumbnail row d-flex justify-content-sm-start text-dark text-decoration-none"
+                  href="../details/details.html"
+                >
+                  <div
+                    class="col-lg-4 col-sm-12 col-md-12"
+                    style="height: 210px"
+                  >
+                    <img
+                      src="./Images/MeatGrill.jpg"
+                      alt="MeatGrill"
+                      class="rounded-2 w-100 h-100"
+                    />
+                  </div>
+
+                  <div class="col-lg-8 col-sm-12 col-md-12">
+                    <div
+                      class="container img-fluid overflow-hidden mt-sm-3 mt-md-3 mt-lg-0"
+                    >
+                      <h4>Meat Grill</h4>
+                      <p class="badge bg-danger">
+                        4.7 <em class="fa orange fa-star"></em>
+                      </p>
+                      <span class="text-muted"> (987 reviews)</span>
+                      <p class="text-muted fst-italic">
+                        Bar, Chinese, Indian, Grill,Beverages
+                      </p>
+                      <p>7th Lane, Subash Road</p>
+
+                      <p>
+                        ₹500 for one
+                        <span class="float-end"
+                          ><img
+                            src="https://us.123rf.com/450wm/outchill/outchill2105/outchill210503592/169696669-food-safety-text-written-on-green-grungy-zig-zag-borders-round-stamp-.jpg?ver=6"
+                            alt="food safety logo"
+                            style="height: 50px; width: 50px"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="row mt-2 h-75" style="width: 80%">
+                <a
+                  class="w-100 p-3 shadow ms-3 row d-flex img-thumbnail justify-content-sm-start text-dark text-decoration-none"
+                  href="../details/details.html"
+                >
+                  <div
+                    class="col-lg-4 col-sm-12 col-md-12"
+                    style="height: 210px"
+                  >
+                    <img
+                      src="./Images/CoffeeHouse .jpg"
+                      alt="CoffeeHouse"
+                      class="rounded-2 w-100 h-100"
+                    />
+                  </div>
+                  <div class="col-lg-8 col-sm-12 col-md-12">
+                    <div class="container">
+                      <h4>Coffee House</h4>
+                      <p class="badge bg-danger">
+                        4.4 <em class="fa orange fa-star"></em>
+                      </p>
+                      <span class="text-muted"> (1279 reviews)</span>
+                      <p class="text-muted fst-italic">
+                        Pasta, Pastry, Indian, Italian, Beverages
+                      </p>
+                      <p>4th Cross, St. Louis Road</p>
+
+                      <p>
+                        ₹100 for one
+                        <span class="float-end"
+                          ><img
+                            src="https://us.123rf.com/450wm/outchill/outchill2105/outchill210503592/169696669-food-safety-text-written-on-green-grungy-zig-zag-borders-round-stamp-.jpg?ver=6"
+                            alt="food safety logo"
+                            style="height: 50px; width: 50px"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="row mt-2 h-75" style="width: 80%">
+                <a
+                  class="w-100 p-3 shadow ms-3 row d-flex justify-content-sm-start text-dark text-decoration-none img-thumbnail"
+                  href="../details/details.html"
+                >
+                  <div
+                    class="col-lg-4 col-sm-12 col-md-12"
+                    style="height: 210px"
+                  >
+                    <img
+                      src="./Images/FreshIceCreams.jpg"
+                      alt="FreshIceCreams"
+                      class="rounded-2 w-100 h-100"
+                    />
+                  </div>
+                  <div class="col-lg-8 col-sm-12 col-md-12">
+                    <div
+                      class="container img-fluid overflow-hidden mt-sm-3 mt-md-3 mt-lg-0"
+                    >
+                      <h4>Fresh Ice Creams</h4>
+                      <p class="badge bg-danger">
+                        4.4 <em class="fa orange fa-star"></em>
+                      </p>
+                      <span class="text-muted"> (397 reviews)</span>
+                      <p class="text-muted fst-italic">
+                        Pasta, Pastry, Indian, Italian, Beverages
+                      </p>
+                      <p>4th Cross, St. Louis Road</p>
+
+                      <p>
+                        ₹100 for one
+                        <span class="float-end"
+                          ><img
+                            src="https://us.123rf.com/450wm/outchill/outchill2105/outchill210503592/169696669-food-safety-text-written-on-green-grungy-zig-zag-borders-round-stamp-.jpg?ver=6"
+                            alt="food safety logo"
+                            style="height: 50px; width: 50px"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="row mt-2 h-75" style="width: 80%">
+                <a
+                  class="w-100 p-3 shadow ms-3 img-thumbnail row d-flex justify-content-sm-start text-dark text-decoration-none"
+                  href="../details/details.html"
+                >
+                  <div
+                    class="col-lg-4 col-sm-12 col-md-12"
+                    style="height: 210px"
+                  >
+                    <img
+                      src="./Images/SoundSalad.jpg"
+                      alt="SoundSalad"
+                      class="rounded-2 w-100 h-100"
+                    />
+                  </div>
+                  <div class="col-lg-8 col-sm-12 col-md-12">
+                    <div
+                      class="container img-fluid overflow-hidden mt-sm-3 mt-md-3 mt-lg-0"
+                    >
+                      <h4>Sound Salad</h4>
+                      <p class="badge bg-danger">
+                        4.8 <em class="fa orange fa-star"></em>
+                      </p>
+                      <span class="text-muted"> (127 reviews)</span>
+                      <p class="text-muted fst-italic">
+                        Chinese, Indian, Italian, Beverages
+                      </p>
+                      <p>1st Cross, Ashoka Colony</p>
+
+                      <p>
+                        ₹250 for one
+                        <span class="float-end"
+                          ><img
+                            src="https://us.123rf.com/450wm/outchill/outchill2105/outchill210503592/169696669-food-safety-text-written-on-green-grungy-zig-zag-borders-round-stamp-.jpg?ver=6"
+                            alt="food safety logo"
+                            style="height: 50px; width: 50px"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-        <footer class="footer">
-            <hr>
-            <h3>&copy; Sharat's Lab</h3>
-            <div class="fotDiv">
-                <ul>
-                    <li class="nav-item">Contact Us</li>
-                    <li class="nav-item">About Us</li>
-                </ul>
-            </div>
-            <div class="fotDiv">
-                <ul>
-                    <li class="nav-item">Contact Us</li>
-                    <li class="nav-item">About Us</li>
-                </ul>
-            </div>
-            <div class="fotDiv noBorder">
-                <ul>
-                    <li class="nav-item">Contact Us</li>
-                    <li class="nav-item">About Us</li>
-                </ul>
-            </div>
-        </footer>
-    </body>
-</!DOCTYPE>
+    <hr />
+    <footer class="bg-dark">
+      <hr />
+      <h3 class="text-white text-center">&copy; Sharat's Lab</h3>
+      <div class="container py-5 text-white d-sm-block">
+        <p class="float-end mb-1 d-sm-block">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1 d-sm-block">
+          If you want to contact us , please do so! <a href="#">Contact</a>
+        </p>
+        <p class="mb-0 d-sm-block">
+          Wanna Know More About Us? <a href="/">Visit the homepage</a> or read
+          our <a href="/">About us</a> page.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
