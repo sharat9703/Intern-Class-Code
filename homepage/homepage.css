@@ -1,13 +1,19 @@
 body{
-    margin:auto
+
 }
 a{
     text-decoration: none;
 }
 header{
-    height:70px;
+    
     /*border:5px solid blue;*/
-    background-color: #3b2632;
+    
+    height:400px;
+    /* border:5px dotted green; */
+    background-image: url('https://images.pexels.com/photos/2942319/pexels-photo-2942319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 400px;
 }
 #brand{
     color:#fff;
@@ -26,12 +32,7 @@ header{
 }
 /* Search Block Css */
 #search{
-    height:400px;
-    /* border:5px dotted green; */
-    background-image: url('images/foodWallpaper.png');
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    background-size: 100% 400px;
+    
     
 }
 #logo{
@@ -42,30 +43,7 @@ header{
     margin-left: 45%;
     margin-top: 1%;
     position: absolute;
-    animation:revolve 20s infinite
-}
-
-@keyframes revolve{
-    0% {
-        transform:rotate(30deg);
-        margin-left: 2%;
-    }
-    25% {
-        transform:rotate(90deg);
-        margin-left: 20%;
-    }
-    50% {
-        transform:rotate(180deg);
-        margin-left: 40%;
-    }
-    75% {
-        transform:rotate(270deg);
-        margin-left: 80%;
-    }
-    100% {
-        transform:rotate(360deg);
-        margin-left: 40%;
-    }
+    
 }
 
 
@@ -77,7 +55,6 @@ header{
 }
 #heading{
     font-size: 60px;
-    color:white;
     margin-left: 28%;
     margin-top: 14%;
     position:absolute;
